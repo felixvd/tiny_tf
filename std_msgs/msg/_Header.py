@@ -43,7 +43,7 @@ string frame_id
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(Header, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.seq is None:
         self.seq = 0

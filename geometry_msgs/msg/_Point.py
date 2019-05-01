@@ -33,7 +33,7 @@ float64 z
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(Point, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.x is None:
         self.x = 0.

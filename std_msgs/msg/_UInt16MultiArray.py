@@ -70,7 +70,7 @@ uint32 stride  # stride of given dimension"""
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(UInt16MultiArray, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.layout is None:
         self.layout = std_msgs.msg.MultiArrayLayout()

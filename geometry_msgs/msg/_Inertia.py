@@ -58,7 +58,7 @@ float64 z"""
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(Inertia, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.m is None:
         self.m = 0.

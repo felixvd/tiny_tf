@@ -87,7 +87,7 @@ float64 w
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(TransformStamped, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.header is None:
         self.header = std_msgs.msg.Header()

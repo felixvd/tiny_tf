@@ -30,7 +30,7 @@ class String():
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(String, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.data is None:
         self.data = ''

@@ -45,7 +45,7 @@ float64 z"""
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(Accel, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.linear is None:
         self.linear = geometry_msgs.msg.Vector3()

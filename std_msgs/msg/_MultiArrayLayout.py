@@ -61,7 +61,7 @@ uint32 stride  # stride of given dimension"""
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(MultiArrayLayout, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.dim is None:
         self.dim = []

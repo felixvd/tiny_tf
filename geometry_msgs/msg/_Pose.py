@@ -49,7 +49,7 @@ float64 w
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(Pose, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.position is None:
         self.position = geometry_msgs.msg.Point()

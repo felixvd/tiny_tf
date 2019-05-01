@@ -57,7 +57,7 @@ float64 z"""
     to set specific fields.
     """
     if args or kwds:
-      pass
+      super(AccelWithCovariance, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
       if self.accel is None:
         self.accel = geometry_msgs.msg.Accel()
