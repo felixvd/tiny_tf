@@ -71,7 +71,7 @@ float64 z"""
     to set specific fields.
     """
     if args or kwds:
-      super(WrenchStamped, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.header is None:
         self.header = std_msgs.msg.Header()

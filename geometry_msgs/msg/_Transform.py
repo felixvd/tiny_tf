@@ -55,7 +55,7 @@ float64 w
     to set specific fields.
     """
     if args or kwds:
-      super(Transform, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.translation is None:
         self.translation = geometry_msgs.msg.Vector3()

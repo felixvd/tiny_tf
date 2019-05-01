@@ -29,7 +29,7 @@ class Empty():
     to set specific fields.
     """
     if args or kwds:
-      super(Empty, self).__init__(*args, **kwds)
+      pass
 
   def _get_types(self):
     """

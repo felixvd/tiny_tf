@@ -33,7 +33,7 @@ float32 a
     to set specific fields.
     """
     if args or kwds:
-      super(ColorRGBA, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.r is None:
         self.r = 0.

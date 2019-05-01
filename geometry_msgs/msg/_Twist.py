@@ -45,7 +45,7 @@ float64 z"""
     to set specific fields.
     """
     if args or kwds:
-      super(Twist, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.linear is None:
         self.linear = geometry_msgs.msg.Vector3()

@@ -30,7 +30,7 @@ class Byte():
     to set specific fields.
     """
     if args or kwds:
-      super(Byte, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.data is None:
         self.data = 0

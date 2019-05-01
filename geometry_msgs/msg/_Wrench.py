@@ -46,7 +46,7 @@ float64 z"""
     to set specific fields.
     """
     if args or kwds:
-      super(Wrench, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.force is None:
         self.force = geometry_msgs.msg.Vector3()

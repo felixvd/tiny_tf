@@ -29,7 +29,7 @@ class Float64():
     to set specific fields.
     """
     if args or kwds:
-      super(Float64, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.data is None:
         self.data = 0.

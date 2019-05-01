@@ -76,7 +76,7 @@ float64 w
     to set specific fields.
     """
     if args or kwds:
-      super(PoseArray, self).__init__(*args, **kwds)
+      pass
       #message fields cannot be None, assign default values for those that are
       if self.header is None:
         self.header = std_msgs.msg.Header()
