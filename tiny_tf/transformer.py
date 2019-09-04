@@ -1,8 +1,8 @@
-from tf import *
+from .tf import *
 import numpy as np
-import transformations as tft
+from . import transformations as tft
 from collections import namedtuple
-import geometry_msgs
+from . import geometry_msgs
 
 
 class Transformer(TFTree):

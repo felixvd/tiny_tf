@@ -5,7 +5,7 @@ python3 = True if sys.hexversion > 0x03000000 else False
 
 import struct
 
-import std_msgs.msg
+from .. import msg
 
 class ByteMultiArray():
   _md5sum = "70ea476cbcfd65ac2f68f3cda1e891fe"

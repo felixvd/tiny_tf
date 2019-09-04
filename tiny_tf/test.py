@@ -1,4 +1,4 @@
-from tf import TFNode, TFTree, Transform
+from .tf import TFNode, TFTree, Transform
 from pprint import pprint
 import numpy as np
 
